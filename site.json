@@ -1,0 +1,49 @@
+{
+  "brand": {
+    "name": "BossArt Paris Rénovation",
+    "logo": "/images/uploads/logo.png"
+  },
+  "hero": {
+    "badge": "Paris et les environs de Paris",
+    "title": "Rénovation intérieure clé en main",
+    "subtitle": "Appartement, studio, salle de bain, cuisine, électricité, plomberie, peinture, parquet, carrelage et finitions soignées."
+  },
+  "contact": {
+    "phone": "06 46 80 24 72",
+    "phone_link": "+33646802472",
+    "email": "bossart@gmail.com",
+    "whatsapp": "33646802472"
+  },
+  "budget": {
+    "line1_label": "Studio 20 m²",
+    "line1_price": "à partir de 20 000 €",
+    "line2_label": "Rénovation complète",
+    "line2_price": "35 000 € – 50 000 €"
+  },
+  "gallery": {
+    "before": "/images/uploads/avant.jpg",
+    "after": "/images/uploads/apres.jpg",
+    "photos": [
+      {
+        "image": "/images/uploads/chantier-1.jpg",
+        "alt": "Photo chantier 1"
+      },
+      {
+        "image": "/images/uploads/chantier-2.jpg",
+        "alt": "Photo chantier 2"
+      },
+      {
+        "image": "/images/uploads/chantier-3.jpg",
+        "alt": "Photo chantier 3"
+      },
+      {
+        "image": "/images/uploads/chantier-4.jpg",
+        "alt": "Photo chantier 4"
+      },
+      {
+        "image": "/images/uploads/chantier-5.jpg",
+        "alt": "Photo chantier 5"
+      }
+    ]
+  }
+}

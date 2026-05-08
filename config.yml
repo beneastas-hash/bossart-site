@@ -1,0 +1,58 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "fr"
+
+collections:
+  - name: "site"
+    label: "Site BossArt"
+    files:
+      - file: "content/site.json"
+        label: "Contenu du site"
+        name: "site"
+        fields:
+          - label: "Marque"
+            name: "brand"
+            widget: "object"
+            fields:
+              - {label: "Nom", name: "name", widget: "string"}
+              - {label: "Logo", name: "logo", widget: "image"}
+          - label: "Page d'accueil"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Badge", name: "badge", widget: "string"}
+              - {label: "Grand titre", name: "title", widget: "string"}
+              - {label: "Texte", name: "subtitle", widget: "text"}
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Téléphone affiché", name: "phone", widget: "string"}
+              - {label: "Téléphone lien", name: "phone_link", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "WhatsApp sans +", name: "whatsapp", widget: "string"}
+          - label: "Budget"
+            name: "budget"
+            widget: "object"
+            fields:
+              - {label: "Ligne 1 titre", name: "line1_label", widget: "string"}
+              - {label: "Ligne 1 prix", name: "line1_price", widget: "string"}
+              - {label: "Ligne 2 titre", name: "line2_label", widget: "string"}
+              - {label: "Ligne 2 prix", name: "line2_price", widget: "string"}
+          - label: "Photos"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - {label: "Photo avant", name: "before", widget: "image"}
+              - {label: "Photo après", name: "after", widget: "image"}
+              - label: "Galerie"
+                name: "photos"
+                widget: "list"
+                fields:
+                  - {label: "Image", name: "image", widget: "image"}
+                  - {label: "Description", name: "alt", widget: "string", required: false}
